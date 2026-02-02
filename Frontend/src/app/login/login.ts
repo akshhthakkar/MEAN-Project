@@ -29,8 +29,8 @@ export class LoginComponent {
         // Save the security token
         localStorage.setItem('token', res.token);
 
-        // Redirect to home page
-        this.router.navigate(['/']);
+        // Redirect to about page
+        this.router.navigate(['/about']);
       },
       error: (err) => {
         // Shows "User not found" or "Invalid Password"
