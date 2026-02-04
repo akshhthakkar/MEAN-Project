@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const mongoURL = "mongodb://localhost:27017/pu_database";
+const mongoURL = "mongodb://localhost:27017/userdb";
 
 mongoose.connect(mongoURL);
 const db = mongoose.connection;

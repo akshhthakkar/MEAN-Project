@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 
 const studentSchema = new mongoose.Schema({
+  studentId: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
@@ -9,8 +13,21 @@ const studentSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  sal: {
+  branch: {
+    type: String,
+  },
+  year: {
     type: Number,
+  },
+  email: {
+    type: String,
+  },
+  cgpa: {
+    type: Number,
+  },
+  isActive: {
+    type: Boolean,
+    default: true,
   },
 });
 
