@@ -24,7 +24,7 @@ app.get("/", async (req, res) => {
       </style>
     </head>
     <body>
-      <h3>Student Detail Page</h3>
+      <h3>Student Details Page</h3>
       <h4>Student Count: ${students.length}</h4>
   `;
 
